@@ -1,67 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
+    <div class="container">
+        <aside class="columna-izquierda">
+            <div class="alineado-centro">
+                <img src="Christian Sigcha.png" alt="Imagen de Christian David Sigcha Diaz" class="img_perfil">
+            </div>
 
-    <header>
-        <h1>Christian David Sigcha Diaz</h1>
-        <h2>Estudiante de Ingeniería en Software - EPN</h2>
-        <img src="Christian Sigcha.png" alt="Imagen de Christian David Sigcha Diaz" width="200" height="200"> 
-    </header>
+            <div class="seccion-informacion">
+                <h2>Contacto</h2>
+                <p>Puedes contactarme a través de mi correo electrónico: <a
+                        href="mailto:christian.sigcha@epn.edu.ec">christian.sigcha@epn.edu.ec</a></p>
 
-    <main>
-        <p>¡Hola! Soy Christian, un apasionado estudiante de Ingeniería en Software en la Escuela Politécnica Nacional (EPN). 
-            Me encanta aprender sobre nuevas tecnologías, desarrollar aplicaciones innovadoras y resolver problemas complejos. 
-            Estoy emocionado de compartir mis proyectos y conocimientos con la comunidad. ¡Bienvenidos a mi sitio web!</p>
-    </main>
+                <form action="">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui" required><br><br>
 
-    <section>
-        <h2>Experiencia laboral</h2>
-        <p>Aun no cuento con experiencia laboral. Pero he realizado proyectos en distintas areas los cuales presentare a continuacion </p>
-        <ul>
-            <li>Inteligencia Artificial: Uso de modelos de machine learning, redes neuronales y visión artificial para el reconocimiento de emociones</li>
-            <li>Computacion Grafica: Desarrollo de videojuego con OpenGL en especifico para la visualización de escenas 3D e interaccion en tiempo real</li>
-        </ul>
-    </section>    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="example@epn.edu.ec" required><br><br>
+
+                    <label for="mensaje">Asunto:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="8" cols="25" required></textarea><br><br>
+                    <br>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="09[0-9]{8}" placeholder="0999999999"
+                        required><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <br><br>
+            </div>
+        </aside>
+
+        <main class="columna-derecha">
+            <header>
+                <h1>Christian David Sigcha Diaz</h1>
+                <h2>Estudiante de Ingeniería en Software - EPN</h2>
+            </header>
+
+            <section>
+                <p>¡Hola! Soy Christian, un apasionado estudiante de Ingeniería en Software en la Escuela Politécnica
+                    Nacional (EPN).
+                    Me encanta aprender sobre nuevas tecnologías, desarrollar aplicaciones innovadoras y resolver
+                    problemas complejos.
+                    Estoy emocionado de compartir mis proyectos y conocimientos con la comunidad. ¡Bienvenidos a mi
+                    sitio web!</p>
+            </section>
+
+            <section>
+                <h2>Experiencia laboral</h2>
+                <p>Aun no cuento con experiencia laboral. Pero he realizado proyectos en distintas areas los cuales
+                    presentare a
+                    continuacion </p>
+                <ul>
+                    <li>Inteligencia Artificial: Uso de modelos de machine learning, redes neuronales y visión
+                        artificial para
+                        el reconocimiento de emociones</li>
+                    <li>Computacion Grafica: Desarrollo de videojuego con OpenGL en especifico para la visualización de
+                        escenas
+                        3D e interaccion en tiempo real</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Mis Proyectos</h2>
+                <ul>
+                    <li><a href="https://github.com/CrisDavidSD/ProyectoIA2">Proyecto 1: Modelo de IA de reconocimiento
+                            de
+                            emociones</a></li>
+                    <li><a href="https://github.com/CrisDavidSD/2025B_GR2SW_GR6">Proyecto 2: Videojuego inteactivo
+                            realizado con
+                            OpenGL</a></li>
+                </ul>
+            </section>
 
 
-    <section>
-        <h2>Mis Proyectos</h2>
-        <ul>
-            <li><a href="https://github.com/CrisDavidSD/ProyectoIA2">Proyecto 1: Modelo de IA de reconocimiento de emociones</a></li>
-            <li><a href="https://github.com/CrisDavidSD/2025B_GR2SW_GR6">Proyecto 2: Videojuego inteactivo realizado con OpenGL</a></li>
-        </ul>
-    </section>
+        </main>
 
-    <section> 
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:christian.sigcha@epn.edu.ec">christian.sigcha@epn.edu.ec</a></p>
-    
-        <form action="">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui" required><br><br>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="example@epn.edu.ec" required><br><br>
-
-            <label for="mensaje">Asunto:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-            <br>
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" name="telefono" pattern="09[0-9]{8}" placeholder="0999999999" required><br><br>  
-            <input type="submit" value="Enviar">
-        </form>
-
-    </section>
+    </div>
 
     <footer>
         <p>Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
 
 </body>
+
 </html>
