@@ -1,0 +1,55 @@
+.img_perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.columna-izquierda {
+    background-color: #004D40;
+    flex: 1;
+    padding: 5px;
+    color: white;
+
+}
+
+.columna-derecha {
+    flex: 4;
+    padding: 5px;
+}
+
+.alineado-centro{
+    text-align: center;
+}
+
+.seccion-informacion{
+    background-color: #00695C;
+    padding: 2px 15px;
+    margin: 10px 10px;
+    border-radius: 2%;
+}
+
+section {
+    background-color: gainsboro;
+    padding: 2px 15px;
+    margin: 10px 10px;
+}
+
+footer {
+    background-color: #005954;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #004D40;
+    color: white;
+    padding: 2px 15px;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
